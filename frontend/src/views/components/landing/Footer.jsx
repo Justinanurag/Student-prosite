@@ -33,8 +33,8 @@ export default function Footer() {
                 <span className="font-display text-2xl font-bold tracking-tight leading-none text-white">
                   Prosite
                 </span>
-                <span className="text-[13px] text-white/50 leading-none mt-1.5 font-medium tracking-wide uppercase">
-                  by Atives
+                <span className="text-[13px] text-white/50 leading-none mt-1.5 font-medium tracking-wide ">
+                  By Atives
                 </span>
               </div>
             </div>
@@ -43,7 +43,6 @@ export default function Footer() {
 
           {/* Socials */}
           <div className="flex flex-col items-center sm:items-end gap-4">
-            <span className="text-white/40 text-sm font-medium tracking-wide uppercase">Connect with us</span>
             <div className="flex items-center gap-4">
               <a
                 href="https://www.linkedin.com/company/1atives"
@@ -94,9 +93,6 @@ export default function Footer() {
               className="hover:text-white transition-colors cursor-pointer"
             >
               Help
-            </a>
-            <a href="#" className="hover:text-white transition-colors cursor-pointer">
-              Privacy
             </a>
           </div>
         </div>

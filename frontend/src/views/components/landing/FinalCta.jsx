@@ -55,7 +55,7 @@ export default function FinalCta() {
             data-testid="final-cta-button"
             className="group inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-white text-black font-medium text-base hover:bg-neutral-100 transition-colors"
           >
-            Build Your Prosite Today
+            Get Your Prosite Today
             <ArrowRight
               size={18}
               className="transition-transform group-hover:translate-x-1"

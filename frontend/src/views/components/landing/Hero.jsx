@@ -81,19 +81,12 @@ export default function Hero() {
               data-testid="hero-cta-primary"
               className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-black text-white text-sm font-medium hover:bg-neutral-800 transition-colors"
             >
-              Build Your Prosite
+              Get Your Prosite
               <ArrowRight
                 size={16}
                 className="transition-transform group-hover:translate-x-0.5"
               />
             </button>
-            <a
-              href="#proof"
-              data-testid="hero-cta-secondary"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 text-sm font-medium text-black hover:border-neutral-400 transition-colors"
-            >
-              <Play size={14} /> Watch Demo
-            </a>
           </motion.div>
 
           <motion.div

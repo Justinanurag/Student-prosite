@@ -6,8 +6,8 @@ import { useCheckout } from "@/models/context/CheckoutContext";
 const includes = [
   "Lifetime Access — One time payment",
   "iOS + Android Apps",
-  "Super Inbox for opportunities",
-  "AI Assistant for bios & replies",
+  "Smart Inbox(DMs & Emails)",
+  "AI Assistant",
   "Govt ID Verified profile",
   "Advanced Profile Insights",
   "Portfolio Showcase + Projects",
@@ -87,7 +87,10 @@ export default function Pricing() {
 
             <ul className="mt-7 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
               {includes.map((f) => (
-                <li key={f} className="flex items-start gap-2 text-sm text-white/80">
+                <li
+                  key={f}
+                  className="flex items-start gap-2 text-sm text-white/80"
+                >
                   <Check size={15} className="mt-0.5 text-white shrink-0" />
                   {f}
                 </li>
@@ -116,20 +119,30 @@ export default function Pricing() {
                 <div className="flex-1">
                   <p className="font-medium">
                     + Gold Metal NFC Card{" "}
-                    <span className={`text-xs ${nfc ? "text-neutral-500" : "text-white/50"}`}>Add-on</span>
+                    <span
+                      className={`text-xs ${nfc ? "text-neutral-500" : "text-white/50"}`}
+                    >
+                      Add-on
+                    </span>
                   </p>
-                  <p className={`text-xs mt-0.5 ${nfc ? "text-neutral-600" : "text-white/50"}`}>
+                  <p
+                    className={`text-xs mt-0.5 ${nfc ? "text-neutral-600" : "text-white/50"}`}
+                  >
                     Tap to share your Prosite at any event.
                   </p>
                 </div>
                 <div className="text-right">
                   <div className="flex items-baseline gap-2 justify-end">
                     <p className="font-display font-bold">+ ₹999</p>
-                    <p className={`text-xs line-through ${nfc ? "text-neutral-400" : "text-white/40"}`}>
+                    <p
+                      className={`text-xs line-through ${nfc ? "text-neutral-400" : "text-white/40"}`}
+                    >
                       ₹2,500
                     </p>
                   </div>
-                  <p className={`text-[10px] uppercase tracking-wider ${nfc ? "text-neutral-500" : "text-white/50"}`}>
+                  <p
+                    className={`text-[10px] uppercase tracking-wider ${nfc ? "text-neutral-500" : "text-white/50"}`}
+                  >
                     {nfc ? "Added" : "Tap to add"}
                   </p>
                 </div>
@@ -161,34 +174,11 @@ export default function Pricing() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="lg:col-span-2 flex flex-col gap-4"
           >
-            <div
-              className="relative rounded-2xl p-8 h-full min-h-[360px] flex flex-col justify-between bg-[#d4af6a] text-black"
-              data-testid="nfc-card-visual"
-            >
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] font-medium">
-                  Prosite Gold NFC
-                </p>
-                <p className="font-display mt-3 text-3xl font-black">
-                  Tap. Get
-                  <br />
-                  Remembered.
-                </p>
-              </div>
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-[10px] uppercase tracking-wider opacity-60">
-                    prosite.io/aanya
-                  </p>
-                  <p className="font-display font-bold mt-0.5">Aanya Sharma</p>
-                </div>
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                  <path d="M5 12.55a11 11 0 0 1 14 0" />
-                  <path d="M8.5 16.43a6 6 0 0 1 7 0" />
-                  <path d="M12 20h.01" />
-                </svg>
-              </div>
-            </div>
+            <img
+              src="https://res.cloudinary.com/dzwto9zbu/image/upload/v1780505654/ChatGPT_Image_Jun_3_2026_10_09_45_PM_veceg4.png"
+              alt="NFC Card Preview"
+              className="w-full max-w-[420px] h-auto object-contain"
+            />
 
             <div className="rounded-2xl bg-white border border-neutral-200 p-5 text-sm text-neutral-700">
               <p className="font-display font-bold text-black">
@@ -200,7 +190,10 @@ export default function Pricing() {
                   "Tap to share Prosite instantly",
                   "Reusable — no app needed",
                 ].map((x) => (
-                  <li key={x} className="flex items-start gap-2 text-neutral-700">
+                  <li
+                    key={x}
+                    className="flex items-start gap-2 text-neutral-700"
+                  >
                     <Check size={14} className="mt-0.5 text-black" />
                     {x}
                   </li>

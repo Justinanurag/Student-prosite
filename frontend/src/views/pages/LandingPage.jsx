@@ -16,12 +16,14 @@ import Pricing from "@/views/components/landing/Pricing";
 import FinalCta from "@/views/components/landing/FinalCta";
 import Footer from "@/views/components/landing/Footer";
 import CheckoutModal from "@/views/components/landing/CheckoutModal";
+import LeadModal from "@/views/components/landing/LeadModal";
 import { CheckoutProvider } from "@/models/context/CheckoutContext";
 
 export default function LandingPage() {
   return (
     <CheckoutProvider>
       <div data-testid="landing-root" className="relative bg-white text-black overflow-hidden">
+        <LeadModal />
         <Navbar />
         <Hero />
         <Marquee />
