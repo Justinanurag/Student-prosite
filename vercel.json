@@ -1,17 +1,25 @@
 {
-  "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
-    }
-  ],
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/build",
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/campus/static/:path*",
+      "destination": "/static/:path*"
+    },
+    {
+      "source": "/campus",
       "destination": "/index.html"
+    },
+    {
+      "source": "/campus/:path*",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/campus",
+      "permanent": false
     }
   ]
 }
