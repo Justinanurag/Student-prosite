@@ -5,7 +5,7 @@ import LandingPage from "@/views/pages/LandingPage";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/campus">
         <Routes>
           <Route path="/" element={<LandingPage />} />
         </Routes>
