@@ -72,7 +72,7 @@ export default function Navbar() {
           >
             <span className="relative z-10 flex items-center gap-2">
               <Sparkles size={14} className="text-blue-400" />
-              Build Your Prosite
+              Get your Prosite
               <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
@@ -120,7 +120,7 @@ export default function Navbar() {
               className="mt-2 group w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-black text-white text-[14px] font-semibold hover:bg-neutral-800 transition-colors"
             >
               <Sparkles size={16} className="text-blue-400" />
-              Build Your Prosite
+              Get your Prosite
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
