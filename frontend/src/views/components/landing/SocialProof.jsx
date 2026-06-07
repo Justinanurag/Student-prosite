@@ -81,7 +81,6 @@ export default function SocialProof() {
             </motion.div>
           ))}
         </div>
-
         <div className="mt-12 grid md:grid-cols-3 gap-4">
           {testimonials.map((t, i) => (
             <motion.div
